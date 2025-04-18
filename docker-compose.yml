@@ -1,9 +1,9 @@
 version: "3.8"
 services:
   # nomi frontend
-  nomi:
+  front:
     build:
-      context: ./nomi
+      context: ./front
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=development
