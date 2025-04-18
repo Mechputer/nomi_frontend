@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  # nomi frontend
+  nomi:
+    build:
+      context: ./nomi
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "0.0.0.0:3000:3000"
+    restart: unless-stopped
